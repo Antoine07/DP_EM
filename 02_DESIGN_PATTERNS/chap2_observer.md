@@ -6,7 +6,7 @@ Ce pattern est très utile pour déclencher une/des action(s) en fonction d'une 
 
 L'Observer est donc une solution modulable, évolutif et testable pour ce type de problème par exemple.
 
-### 01 Exemple
+### 01 Exercice 
 
 - L'interface **SplSubject** de PHP, cette interface définie une classe donnée comme observable (Subject), elle devra donc implémenter (interface) des méthodes spécifiques (attach, detach et notify) : 
 
@@ -62,6 +62,8 @@ $subject->attach(new Log);
 // crée un nouvel utilisateur => notification 
 $subject->create('Alan', 'alan@alan.fr');
 ```
+
+Implémentez un nouvel observeur de votre choix, par exemple un observeur qui ajoute l'id de nouvel utilisateur créé dans un tableau, dans l'exemple ci-dessus.
 
 ### 01 Exercice Cart Observer
 
