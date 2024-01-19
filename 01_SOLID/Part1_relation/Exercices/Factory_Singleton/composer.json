@@ -1,0 +1,15 @@
+{
+    "name": "factory/factory",
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "antoine07",
+            "email": "antoine07@gmail.com"
+        }
+    ],
+    "require": {}
+}
