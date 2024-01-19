@@ -148,6 +148,10 @@ classDiagram
   ModelFactory --> Model
 ```
 
+## 02 Exercice Singleton
+
+Faites une classe qui une fois qu'elle crée un objet si on a besoin de cette même classe métier on ne re-crée pas cet objet.
+
 
 ## 02 Exercice Park de Vehicules
 
