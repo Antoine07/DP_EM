@@ -20,7 +20,21 @@ Notons que l’héritage multiple n’existe pas en PHP, vous ne pouvez hériter
 
 Pour faire de l’héritage vous devez appliquer le principe suivant : **une classe étendue doit être une sorte de ou est un.**. Par exemple, si vous avez une classe **Book** qui est étendue de la classe **Product**, vous faites bien de l’héritage, car un livre est un produit ou une sorte de produit.
 
-<img src="./images/heritage.png" width="500" />
+```mermaid
+classDiagram
+  class Product {
+    +price: number
+    +name: string
+  }
+
+  class Book {
+    -isbn: string
+  }
+
+  Product <|-- Book
+```
+
+Les classes en PHP
 
 ```php
 class Product{
@@ -38,6 +52,7 @@ class Product{
     // ...
 }
 
+# couplage fort
 class Book extends Product{}
 ```
 
